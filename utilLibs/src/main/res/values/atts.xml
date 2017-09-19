@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RevealLayout">
+        <attr name="reneal_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TextNumView">
+        <attr name="text_color" format="color" />
+        <attr name="text_text" format="string" />
+        <attr name="num_color" format="color" />
+        <attr name="num_text" format="string" />
+        <attr name="text_size" format="integer" />
+        <attr name="num_size" format="integer" />
+        <attr name="num_bg" format="color" />
+        <attr name="type" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+        <attr name="aspect" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MyRadioGroup">
+        <attr name="enEdit" format="boolean"/>
+    </declare-styleable>
+</resources>

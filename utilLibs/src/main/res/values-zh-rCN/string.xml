@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--HttpHelper-->
+    <string name="network_noConnected">网络连接已断开</string>
+
+    <!--AlterDialogFactory-->
+    <string name="dialog_confirm_button">确定</string>
+    <string name="dialog_cancel_button">取消</string>
+
+    <!--自定义progressbardialog-->
+    <string name="loading">加载中...</string>
+</resources>

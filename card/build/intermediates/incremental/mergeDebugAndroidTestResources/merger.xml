@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug$Generated" generated="true"><source path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="D:\workspace\project\DemoLibs\card\src\androidTest\res"/><source path="D:\workspace\project\DemoLibs\card\build\generated\res\rs\androidTest\debug"/><source path="D:\workspace\project\DemoLibs\card\build\generated\res\resValues\androidTest\debug"/></dataSet><dataSet config="debug" from-dependency="true" generated-set="debug$Generated"><source path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res"><file name="ic_launcher" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\drawable-xxhdpi-v4\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_main" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="main" path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\menu\main.xml" qualifiers="" type="menu"/><file path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\values\values.xml" qualifiers=""><string-array name="spinnerStop">
+        <item>1</item>
+        <item>2</item>
+    </string-array><string name="spinner_port">端口</string><string name="spinner_stop">停止位</string><string name="btn_setCharPosition">设置字符右边距</string><string name="btn_setDoubleWidth">打印倍宽</string><string-array name="spinnerBlockValue">
+        <item>01</item>
+        <item>02</item>
+    </string-array><string name="btn_perversion">颠倒模式</string><string-array name="spinnerParity">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array><string name="btn_leftAlign">左对齐</string><string name="btn_centerAlign">居中</string><string name="btn_openCashbox">打开钱箱</string><string name="btn_printLF">打印并走纸</string><string name="btn_rightAlign">右对齐</string><string name="btn_printPic">位图模式</string><string name="btn_setRowDefault">设置行间距默认值</string><dimen name="activity_vertical_margin">16dp</dimen><string name="btn_setDoubleHeightWidth">打印倍高倍宽</string><string name="btn_setPrintMode">设置打印倍高倍宽模式</string><string name="spinner_baud">波特率</string><string name="spinner_parity">校验位</string><string name="btn_setAbsPrintLocation">设置绝对打印位置</string><string name="btn_printQR">打印二维码</string><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style><string name="btn_setHorizontalPoint">设置水平定位点</string><string name="btn_stopCyclePrint">关闭</string><string name="btn_setCnPosition">设置中文左右边距</string><string name="btn_HRIPosition">HRI字符打印位置</string><string name="btn_setDoubleHeight">打印倍高</string><string-array name="spinnerCycleTime">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>60</item>
+    </string-array><string name="btn_printJN">打印并走纸n行</string><string name="btn_printBarcode">打印条码</string><string name="spinner_data">数据位</string><string name="btn_statusCashbox">钱箱状态</string><string-array name="spinnerData">
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array><string name="btn_closeSerialPort">关闭串口</string><string name="btn_openSerialPort">打开串口</string><string name="btn_setEnCharGap">设置西文字符间距</string><string name="btn_printNVBit">打印NV位图</string><string name="hello_world">Hello world!</string><string-array name="spinnerBlockNum">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+    </string-array><string name="action_settings">Settings</string><string name="app_name">M1Card</string><string-array name="spinnerBaud">
+        <item>115200</item>
+        <item>2400</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+    </string-array><string name="btn_printStatus">打印机状态</string><string name="btn_defineNVBit">定义NV位图</string><string name="btn_startCyclePrint">循环打印</string><string name="btn_setRowGap">设置行间距</string><dimen name="activity_horizontal_margin">16dp</dimen><string name="btn_printInit">打印机初始化</string><string name="btn_setPicLeftGap">设置图片左边距</string><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style></file><file path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\values-v11\values-v11.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style></file><file path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\values-v14\values-v14.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file><file path="D:\workspace\project\DemoLibs\card\build\intermediates\bundles\debug\res\values-w820dp-v13\values-w820dp-v13.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\workspace\project\DemoLibs\card\src\androidTest\res"/><source path="D:\workspace\project\DemoLibs\card\build\generated\res\rs\androidTest\debug"/><source path="D:\workspace\project\DemoLibs\card\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>

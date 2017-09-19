@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_port" />
+
+        <Spinner
+            android:id="@+id/spinner_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_port" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_baud" />
+
+        <Spinner
+            android:id="@+id/spinner_baud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerBaud" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_data" />
+
+        <Spinner
+            android:id="@+id/spinner_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerData" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_stop" />
+
+        <Spinner
+            android:id="@+id/spinner_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerStop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spinner_parity" />
+
+        <Spinner
+            android:id="@+id/spinner_parity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerParity" >
+        </Spinner>
+
+        <Button
+            android:id="@+id/btn_openSerialPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_openSerialPort" />
+
+        <Button
+            android:id="@+id/btn_closeSerialPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_closeSerialPort" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_get_cardnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取卡号" />
+
+        <TextView
+            android:id="@+id/tv_get_cardnum"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_get_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取模块版本号" />
+
+        <TextView
+            android:id="@+id/tv_get_model"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_close_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭模块" />
+
+        <Button
+            android:id="@+id/btn_restart_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模块热启动" />
+
+        <Button
+            android:id="@+id/btn_rfreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="射频重启" />
+
+        <Button
+            android:id="@+id/btn_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查射频范围内是否有卡" />
+
+        <Button
+            android:id="@+id/btn_anticoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防冲突" />
+
+        <TextView
+            android:id="@+id/tv_anticoll"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_select_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选卡" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_authentication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认证" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--------必须先读卡号，认证后，才能进行下面的操作--------------------------------------------------------------------"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    块号："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spinner_block_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerBlockNum" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_read_block"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_read_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读数据" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    块号："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spinner_block_num_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerBlockNum" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/et_write_block"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_write_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写数据" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--------必须先读卡号，认证后，才能进行下面的操作--------------------------------------------------------------------"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    块号："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spinner_block_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerBlockValue" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    传值块号："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/spinner_block_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerBlockValue" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    数值："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/et_write_block_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="1000" >
+        </EditText>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+      
+        <Button
+            android:id="@+id/btn_init_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="初始化" />
+      
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加值" />
+      
+        <Button
+            android:id="@+id/btn_subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="减值" />
+      
+        <Button
+            android:id="@+id/btn_transmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传值" />
+      
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读值" />
+    </LinearLayout>
+
+</LinearLayout>

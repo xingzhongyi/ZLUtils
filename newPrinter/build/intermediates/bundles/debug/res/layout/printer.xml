@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    	
+    
+   	<LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+   			android:orientation="horizontal" >
+   		
+   	    	<TextView
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/port" />
+   	    	
+   	    	<Spinner
+           		android:id="@+id/spinnerPort"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	  />
+   		 
+   	    	<TextView
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/baud" />
+   	    	
+   	    	<Spinner
+           		android:id="@+id/spinner"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:entries="@array/spinner1"  />
+   	    	
+   	    	<Button
+            		android:id="@+id/btnOpen"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/open" />
+   	    	
+   	    	
+    
+     	</LinearLayout>
+     	
+   	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   	    	<Button
+            		android:id="@+id/btnPrint"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="print" />	
+            		
+   	    	<Button
+            		android:id="@+id/btnDoubleWidth"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/doubleWidth" />
+   	    	
+   	    	<Button
+            		android:id="@+id/btnDoubleHight"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnDoubleHight" />	
+            		
+   	    	<Button
+            		android:id="@+id/btnEnlarge"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/enlarge" />	
+            		
+   	    	<Button
+            		android:id="@+id/btnVertical"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnVertical" />
+   	    	
+   	    	<Button
+            		android:id="@+id/btnTurn"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnTurn" />
+   	    	
+   	    	<Button
+            		android:id="@+id/btnUnderline"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnUnderline" />	
+            		
+   	    	<Button
+            		android:id="@+id/btnOverline"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnOverline" />	
+            		
+   	    	<Button
+            		android:id="@+id/btnBarcode"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnBarcode" />
+   	    	
+   	    	<Button
+            		android:id="@+id/btnCarsh"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/btnCarsh" />
+   	      	    	
+   	</LinearLayout>
+   	
+   	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   	    	
+   		<TextView
+       		 	android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:gravity="center"
+        		android:text="@string/textLoop" />
+   	</LinearLayout>
+   	
+   	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   	
+   	
+   		
+   		<TextView
+       		 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/textTime" />
+   
+   	    	
+   	    
+   	    <Spinner
+           		android:id="@+id/spinnerTime"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:entries="@array/spinnerTime"  />
+   	    	
+   	    <Button
+            	android:id="@+id/btnStart"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/btnStart" />
+   	    
+   	    <Button
+            	android:id="@+id/btnStop"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/btnStop" />
+   	</LinearLayout>
+   	
+   	<LinearLayout       	
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		
+    		<TextView
+    	    	android:id="@+id/textSendData"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:gravity="center"
+        		android:text="@string/custormDisplay" />
+    		   		
+    	
+    </LinearLayout>
+    
+   	<LinearLayout       	
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		
+    		<Button
+            	android:id="@+id/btn1"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="display" />
+   	    
+   	    	<Button
+            	android:id="@+id/btn2"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="clear" />
+   	    	
+   	    	<Button
+            	android:id="@+id/btn3"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="shanShuo" />
+   	    	
+   	    	<Button
+            	android:id="@+id/btn4"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="reset" />
+    		   		
+    	
+    </LinearLayout>
+   	
+</LinearLayout>

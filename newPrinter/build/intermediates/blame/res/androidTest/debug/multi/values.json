@@ -1,0 +1,469 @@
+[
+    {
+        "outputFile": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 8,
+                    "endColumn": 16,
+                    "endOffset": 226
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 8,
+                        "endColumn": 16,
+                        "endOffset": 226
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 231,
+                    "endLine": 14,
+                    "endColumn": 16,
+                    "endOffset": 408
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 231,
+                        "endLine": 14,
+                        "endColumn": 16,
+                        "endOffset": 408
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 413,
+                    "endLine": 21,
+                    "endColumn": 16,
+                    "endOffset": 573
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 413,
+                        "endLine": 21,
+                        "endColumn": 16,
+                        "endOffset": 573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 578,
+                    "endColumn": 43,
+                    "endOffset": 617
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 578,
+                        "endColumn": 43,
+                        "endOffset": 617
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 622,
+                    "endColumn": 36,
+                    "endOffset": 654
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 622,
+                        "endColumn": 36,
+                        "endOffset": 654
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 659,
+                    "endColumn": 42,
+                    "endOffset": 697
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 659,
+                        "endColumn": 42,
+                        "endOffset": 697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 702,
+                    "endColumn": 39,
+                    "endOffset": 737
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 702,
+                        "endColumn": 39,
+                        "endOffset": 737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 742,
+                    "endColumn": 45,
+                    "endOffset": 783
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 742,
+                        "endColumn": 45,
+                        "endOffset": 783
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 788,
+                    "endColumn": 43,
+                    "endOffset": 827
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 788,
+                        "endColumn": 43,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 832,
+                    "endColumn": 39,
+                    "endOffset": 867
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 832,
+                        "endColumn": 39,
+                        "endOffset": 867
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 872,
+                    "endColumn": 38,
+                    "endOffset": 906
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 872,
+                        "endColumn": 38,
+                        "endOffset": 906
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 911,
+                    "endColumn": 40,
+                    "endOffset": 947
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 911,
+                        "endColumn": 40,
+                        "endOffset": 947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 952,
+                    "endColumn": 44,
+                    "endOffset": 992
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 952,
+                        "endColumn": 44,
+                        "endOffset": 992
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 997,
+                    "endColumn": 44,
+                    "endOffset": 1037
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 997,
+                        "endColumn": 44,
+                        "endOffset": 1037
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1042,
+                    "endColumn": 97,
+                    "endOffset": 1135
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1042,
+                        "endColumn": 97,
+                        "endOffset": 1135
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1140,
+                    "endColumn": 42,
+                    "endOffset": 1178
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1140,
+                        "endColumn": 42,
+                        "endOffset": 1178
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1183,
+                    "endColumn": 40,
+                    "endOffset": 1219
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1183,
+                        "endColumn": 40,
+                        "endOffset": 1219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1224,
+                    "endColumn": 66,
+                    "endOffset": 1286
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1224,
+                        "endColumn": 66,
+                        "endOffset": 1286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1291,
+                    "endColumn": 40,
+                    "endOffset": 1327
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1291,
+                        "endColumn": 40,
+                        "endOffset": 1327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1332,
+                    "endColumn": 40,
+                    "endOffset": 1368
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1332,
+                        "endColumn": 40,
+                        "endOffset": 1368
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1373,
+                    "endColumn": 35,
+                    "endOffset": 1404
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1373,
+                        "endColumn": 35,
+                        "endOffset": 1404
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 1409,
+                    "endColumn": 35,
+                    "endOffset": 1440
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1409,
+                        "endColumn": 35,
+                        "endOffset": 1440
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 1445,
+                    "endColumn": 77,
+                    "endOffset": 1518
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1445,
+                        "endColumn": 77,
+                        "endOffset": 1518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 1523,
+                    "endColumn": 39,
+                    "endOffset": 1558
+                },
+                "from": {
+                    "file": "D:\\workspace\\project\\DemoLibs\\newPrinter\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 1523,
+                        "endColumn": 39,
+                        "endOffset": 1558
+                    }
+                }
+            }
+        ]
+    }
+]

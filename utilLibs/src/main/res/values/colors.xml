@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--点击效果水波纹默认颜色-->
+    <color name="reveal_color">#1b000000</color>
+
+    <!--透明背景-->
+    <color name="transparent">#0000</color>
+
+    <color name="progressBarColor">#ff0066</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorLine">#53739c</color>
+
+    <color name="colorInput">#323232</color>
+    <color name="colorHint">#C0C0C0</color>
+
+    <color name="colorEt">#49a93e</color>
+
+    <color name="download_progress_bar_noSelect_color">#e3e4e6</color>
+    <color name="download_progress_bar_select_color">#6692cc</color>
+
+    <color name="red">#ff0000</color>
+</resources>
