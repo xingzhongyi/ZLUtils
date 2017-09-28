@@ -240,13 +240,13 @@ public class AndroidSDK {
 	/**
 	 * 设置串口参数
 	 * 
-	 * @param hander
+	 * @param hSerial
 	 *            OpenUart成功时，返回的设备句柄
-	 * @param dataBits
+	 * @param nDataBits
 	 *            设置数据位
-	 * @param StopBits
+	 * @param nStopBits
 	 *            设置停止位
-	 * @param parity
+	 * @param nParity
 	 *            设置校验位
 	 * @return 等于0，表示成功，否则失败
 	 */

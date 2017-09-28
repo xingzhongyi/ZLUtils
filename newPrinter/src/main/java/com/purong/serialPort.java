@@ -14,8 +14,8 @@ public class serialPort {
     public int CMD = 0;
     public int STRING = 1;
 
-    private String pageWidth="small";//默认是58mm
-    private String brand="PD";//默认是湃达打印机
+    private String pageWidth = "small";//默认是58mm
+    private String brand = "PD";//默认是湃达打印机
 
     public String getPageWidth() {
         return pageWidth;
