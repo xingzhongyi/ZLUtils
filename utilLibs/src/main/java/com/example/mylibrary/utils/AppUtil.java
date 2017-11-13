@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.text.TextUtils;
 import android.util.Log;
 
 import java.util.List;
@@ -90,5 +91,51 @@ public class AppUtil {
             Log.e("VersionInfo", "Exception", e);
         }
         return versionName;
+    }
+    /**
+     * 判断是否在主进程
+     *
+     * @param context
+     * @return
+     */
+    public static boolean inMainProcess(Context context) {
+        String packageName = context.getPackageName();
+        String processName = AppUtil.getProcessName(context);
+        return packageName.equals(processName);
+    }
+
+    /**
+     * 获取当前进程名
+     *
+     * @param context
+     * @return 进程名
+     */
+    public static final String getProcessName(Context context) {
+        String processName = null;
+
+        // ActivityManager
+        ActivityManager am = ((ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE));
+
+        while (true) {
+            for (ActivityManager.RunningAppProcessInfo info : am.getRunningAppProcesses()) {
+                if (info.pid == android.os.Process.myPid()) {
+                    processName = info.processName;
+
+                    break;
+                }
+            }
+
+            // go home
+            if (!TextUtils.isEmpty(processName)) {
+                return processName;
+            }
+
+            // take a rest and again
+            try {
+                Thread.sleep(100L);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
     }
 }

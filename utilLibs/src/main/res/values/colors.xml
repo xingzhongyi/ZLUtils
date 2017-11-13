@@ -21,4 +21,7 @@
     <color name="download_progress_bar_select_color">#6692cc</color>
 
     <color name="red">#ff0000</color>
+
+    <color name="black_23">#231815</color>
+    <color name="black_32">#323232</color>
 </resources>
