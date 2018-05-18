@@ -14,9 +14,18 @@ import android.util.DisplayMetrics;
 
 import com.example.mylibrary.application.ApplicationHelper;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /**
  * 获取设备信息的类
@@ -58,12 +67,12 @@ public class DeviceHelper {
     public static boolean isEthernetConnected() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getContext()
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo wifiInfo = connectivityManager
-                .getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-        if (null == wifiInfo) {
+        NetworkInfo etherInfo = connectivityManager
+                .getNetworkInfo(ConnectivityManager.TYPE_ETHERNET);
+        if (null == etherInfo) {
             return false;
         }
-        return wifiInfo.isConnected();
+        return etherInfo.isConnected();
     }
 
     /**
@@ -289,5 +298,60 @@ public class DeviceHelper {
         result = wifiInfo.getMacAddress();
         // Log.i(TAG, "macAdd:" + result);
         return result;
+    }
+
+    /**
+     * 获取网络状态
+     *
+     * @return
+     */
+    public static String getNetWorkStatus(final String remoteUrl) {
+
+        final ExecutorService exec = Executors.newFixedThreadPool(1);
+
+        Callable<Object> call = new Callable<Object>() {
+            public Object call() throws Exception {
+                // 开始执行耗时操作
+                return isReachable(remoteUrl);
+            }
+        };
+
+        String resultString = "NETTYPE_NONE";
+
+        try {
+            Future<Object> future = exec.submit(call);
+            Object result = future.get(1000 * 5, TimeUnit.MILLISECONDS); // 任务处理超时时间设为
+
+            if (result.equals(true)) {
+                resultString = "NETTYPE_OK";
+            }
+
+        } catch (TimeoutException ex) {
+        } catch (Exception e) {
+        }
+
+        // 关闭线程池
+        exec.shutdown();
+        return resultString;
+    }
+
+
+//    private static String remoteUrl = BaseConfig.server_api_base + "ping.txt";
+
+    private static boolean isReachable(String remoteUrl) {
+
+        URL url = null;
+        try {
+
+            url = new URL(remoteUrl);
+
+            InputStream in = url.openStream();// 打开到此 URL 的连接并返回一个用于从该连接读入的
+            // InputStream
+            in.close();// 关闭此输入流并释放与该流关联的所有系统资源。
+
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
     }
 }

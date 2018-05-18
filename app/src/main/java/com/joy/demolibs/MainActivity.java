@@ -1,13 +1,20 @@
 package com.joy.demolibs;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.mylibrary.activity.BaseActivity;
+import com.example.mylibrary.utils.DeviceHelper;
+import com.example.mylibrary.utils.L;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        boolean openNetwork = DeviceHelper.isOpenNetwork();
+        L.e("xxx", openNetwork + "");
+        showPd();
+
     }
 }

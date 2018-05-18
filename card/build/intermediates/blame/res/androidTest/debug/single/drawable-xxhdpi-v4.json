@@ -2,5 +2,9 @@
     {
         "merged": "D:\\workspace\\project\\DemoLibs\\card\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "D:\\workspace\\project\\DemoLibs\\card\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workspace\\project\\ZLUtils\\card\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\workspace\\project\\ZLUtils\\card\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     }
 ]

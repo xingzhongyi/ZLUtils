@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZLUtils.iml" filepath="$PROJECT_DIR$/ZLUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/card/card.iml" filepath="$PROJECT_DIR$/card/card.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newPrinter/newPrinter.iml" filepath="$PROJECT_DIR$/newPrinter/newPrinter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utilLibs/utilLibs.iml" filepath="$PROJECT_DIR$/utilLibs/utilLibs.iml" />
+    </modules>
+  </component>
+</project>

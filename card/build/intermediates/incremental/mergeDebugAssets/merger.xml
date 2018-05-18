@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\workspace\project\DemoLibs\card\src\main\assets"/><source path="D:\workspace\project\DemoLibs\card\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\workspace\project\DemoLibs\card\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\workspace\project\ZLUtils\card\src\main\assets"/><source path="D:\workspace\project\ZLUtils\card\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\workspace\project\ZLUtils\card\src\debug\assets"/></dataSet></merger>

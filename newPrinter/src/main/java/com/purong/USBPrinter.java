@@ -386,11 +386,25 @@ public class USBPrinter {
         }
 
     }
-    public  void openCash(){
-       byte[] arrayOfByte = new byte[]{27,112,0,50,80};
-        Log.d("Cash","dfsadfssdfsadfsd");
+
+    public void openCash() {
+        byte[] arrayOfByte = new byte[]{27, 112, 0, 50, 80};
         this.printByteData(arrayOfByte);
 
+    }
+
+    public void cutHalfPaper() {
+        if (1305 == mUsbDevice.getVendorId() && 8211 == mUsbDevice.getProductId()) {
+            byte[] arrayOfByte = new byte[]{27, 109};
+            this.printByteData(arrayOfByte);
+        }
+    }
+
+    public void cutTotalPaper() {
+        if (1305 == mUsbDevice.getVendorId() && 8211 == mUsbDevice.getProductId()) {
+            byte[] arrayOfByte = new byte[]{27, 105};
+            this.printByteData(arrayOfByte);
+        }
     }
 
     public void setLeftMargin(int nL, int nH) {
@@ -517,7 +531,22 @@ public class USBPrinter {
                 while (var2.hasNext()) {
                     UsbDevice e = (UsbDevice) var2.next();
                     Log.d("USBPrinter", "vid:" + e.getVendorId() + "   pid:" + e.getProductId() + "   " + e.getDeviceName());
-                    if (1193 == e.getVendorId() && 22352 == e.getProductId()) {
+//                    if ((1193 == e.getVendorId() && 22352 == e.getProductId())
+//                            ||(5455 == e.getVendorId() && 5455 == e.getProductId())
+//                            ||(26728 == e.getVendorId() && 512 == e.getProductId())) {
+//                        if (USBPrinter.this.mHandler != null) {
+//                            USBPrinter.this.mHandler.obtainMessage(100, e).sendToTarget();
+//                        }
+//
+//                        USBPrinter.this.hasFoundDevice = true;
+//                    }
+                    if (1193 == e.getVendorId()
+                            || 5455 == e.getVendorId()
+                            || 34918 == e.getVendorId()
+                            || 1137 == e.getVendorId()
+                            || 6790 == e.getVendorId()
+                            || 1305 == e.getVendorId()
+                            || 26728 == e.getVendorId()) {
                         if (USBPrinter.this.mHandler != null) {
                             USBPrinter.this.mHandler.obtainMessage(100, e).sendToTarget();
                         }
@@ -561,10 +590,10 @@ public class USBPrinter {
         }
     }
 
-    public static void openCash(USBPrinter mPrinter){
+    public static void openCash(USBPrinter mPrinter) {
         mPrinter.init();
-        byte[] arrayOfByte = new byte[]{27,115,(byte)0,(byte)50,(byte)80};
-        Log.d("Cash","dfsadfssdfsadfsd");
+        byte[] arrayOfByte = new byte[]{27, 115, (byte) 0, (byte) 50, (byte) 80};
+        Log.d("Cash", "dfsadfssdfsadfsd");
         mPrinter.printByteData(arrayOfByte);
 
     }

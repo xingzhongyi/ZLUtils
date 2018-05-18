@@ -257,6 +257,9 @@ public class BluetoothPrinter {
                         Log.i("BluetoothPrinter", "all method connect failed, return.");
                         var4.printStackTrace();
                         BluetoothPrinter.this.closeConnection();
+                        if (printerHandler != null) {
+                            printerHandler.obtainMessage(102).sendToTarget();
+                        }
                         return;
                     }
                 }
@@ -486,7 +489,7 @@ public class BluetoothPrinter {
             this.sendStream.write(content);
             this.sendStream.flush();
             return 0;
-        } catch (IOException var3) {
+        } catch (Exception var3) {
             var3.printStackTrace();
             return -1;
         }
