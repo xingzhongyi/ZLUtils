@@ -29,7 +29,7 @@ dependencies {
     compile 'org.xutils:xutils:3.3.42'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.android.support:design:23.3.0'
-    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.code.gson:gson:2.8.5'
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
 }
 

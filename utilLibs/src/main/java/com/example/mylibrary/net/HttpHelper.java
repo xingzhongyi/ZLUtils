@@ -496,13 +496,18 @@ public class HttpHelper {
                         FileOutputStream FOS = new FileOutputStream(filePath);
                         int numread;
                         byte buf[] = new byte[1024];
+                        int position = 0;
+                        downLoadFilePosition = 0;
                         while ((numread = is.read(buf)) != -1) {
                             while (isStop) {
                                 Log.e("xzy", "暂停ing");
                             }
                             FOS.write(buf, 0, numread);
                             downLoadFilePosition += numread;
-                            handler.sendEmptyMessage(Down_LOADING);
+                            if ((float) downLoadFilePosition * 100 / fileSize > position) {
+                                handler.sendEmptyMessage(Down_LOADING);
+                                position++;
+                            }
                         }
                         try {
                             is.close();
@@ -511,6 +516,7 @@ public class HttpHelper {
                         }
                     }
                 } catch (Exception e) {
+                    handler.sendEmptyMessage(Down_ERROR);
                     e.printStackTrace();
                     File file = new File(filePath);
                     if (file.exists()) {
@@ -524,20 +530,16 @@ public class HttpHelper {
             public void handleMessage(Message msg) {
                 switch (msg.what) {
                     case Down_START:
-                        Log.e("xzy", "Down_START\tfileSize:" + fileSize);
                         callBack.onStart(fileSize);
                         break;
                     case Down_LOADING:
-                        Log.e("xzy", "Down_LOADING\tdownLoadFilePosition:" + downLoadFilePosition);
                         callBack.onLoading(downLoadFilePosition, fileSize);
                         break;
                     case Down_FINISH:
                         isDownLoaded = true;
-                        Log.e("xzy", "Down_FINISH\tdownLoadFilePosition:" + downLoadFilePosition);
                         callBack.onFinish();
                         break;
                     case Down_ERROR:
-                        Log.e("xzy", "Down_ERROR\tdownLoadFilePosition:" + downLoadFilePosition);
                         callBack.onError(downLoadFilePosition);
                         break;
                 }

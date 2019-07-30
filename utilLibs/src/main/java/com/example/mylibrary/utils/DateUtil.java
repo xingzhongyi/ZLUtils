@@ -10,6 +10,7 @@ import java.util.Date;
 public class DateUtil {
     static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     static SimpleDateFormat format_HM = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+    static SimpleDateFormat format_YMD = new SimpleDateFormat("yyyy.MM.dd");
 
     /**
      * 获取几天后日期
@@ -62,6 +63,12 @@ public class DateUtil {
             return "";
         }
         return format_HM.format(new Date(date));
+    }
+    public static String getTime_YMD(long date) {
+        if (date == 0) {
+            return "";
+        }
+        return format_YMD.format(new Date(date));
     }
 
     public static String getTime(Date startDate, Date endDate) {

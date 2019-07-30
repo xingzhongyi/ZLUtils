@@ -18,8 +18,8 @@ public class ThreadPoolExeManager {
     private ThreadPoolExecutor executor;//线程池
 
     private ThreadPoolExeManager() {
-        queue = new ArrayBlockingQueue<Runnable>(20);
-        executor = new ThreadPoolExecutor(3, 10, 60, TimeUnit.MILLISECONDS, queue, new RejectedExecutionHandler() {
+        queue = new ArrayBlockingQueue<Runnable>(100);
+        executor = new ThreadPoolExecutor(5, 100, 60, TimeUnit.MILLISECONDS, queue, new RejectedExecutionHandler() {
             @Override
             public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
                 Log.e("ThreadPoolExeManager", executor.toString());
